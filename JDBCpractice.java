@@ -30,6 +30,7 @@ public class JDBCpractice {
         ResultSet resultSet = statement.executeQuery("select * from employees");
         resultSet.next();  // it will go to the next row. If there is  a next() row it will return TRUE if No it will return FALSE
         System.out.println(resultSet.getString("first_name"));
+        
 
         resultSet.last();  // it will go to last row
         //resultSet.first();  -- it will go to the first row
